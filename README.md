@@ -4,4 +4,4 @@ Personal presentations, articles, posts and so forth which are open for discussi
 
 # Presentations
 
-- [A Multimodal Approach to Digital Publications](presentations/hdh2015.md) - *Humanidades Digitales Hispánicas 2015, 05. - 07. of October, UNED Madrid*
+- [A Multimodal Approach to Digital Publications](http://nowalkowski.de/slides/hdh2015/) ([Source](presentations/hdh2015.md)) - *Humanidades Digitales Hispánicas 2015, 05. - 07. of October, UNED Madrid*
