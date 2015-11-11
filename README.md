@@ -5,3 +5,4 @@ Personal presentations, articles, posts and so forth which are open for discussi
 # Presentations
 
 - [A Multimodal Approach to Digital Publications](http://nowalkowski.de/slides/hdh2015/) ([Source](presentations/hdh2015.md)) - *Humanidades Digitales Hispánicas 2015, 05. - 07. of October, UNED Madrid*
+- [Evaluating Practices and Context of Annotations](http://nowalkowski.de/slides/ws-anno-ii/ ([Source](presentations/context_and_practices_of_annotations.md)) - *Practices and Context in Contemporary Annotation Activities 29. - 30. of October 2015, University of Hamburg*
