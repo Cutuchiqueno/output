@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Economica:400,700,400italic,700italic&subset=latin,latin-ext);
+
+.reveal {
+	font-size: 25px;
+	background: #272822;
+	color: #f5f4f1;
+}
+
+.reveal .progress span {
+	background: #a6e22e;
+	padding-bottom: 20px;
+}
+
+.reveal h1 {
+	color: #f5f4f1;
+	font-weight: bold;
+	font-family: 'Economica', sans-serif;
+}
+
+.reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6, .reveal p, .reveal li {
+	color: #a59f85;
+	font-family: 'Economica', sans-serif;
+}
+
+.reveal p, .reveal li {
+    font-size: 1.3em;
+}
+
+.reveal a {
+    color: #a6e22e;
+}
+.reveal a:hover {
+    color: #a6e22e;
+}
+
+/* .reveal img, .reveal video, .reveal iframe {
+    max-width: 35%;
+    max-height: 35%;
+} */
+
+.reveal blockquote {
+    margin: 0 0 0 4em;
+    padding: 0.1em 0.5em;
+    quotes: '„' '”'; 
+    font-style: italic;
+    font-size: 1.1em;
+    box-shadow: 0 0 0;
+    background: #383830;
+}
+
+.reveal blockquote > p {
+    text-align: left;
+    font-weight: bold;
+    color: #f4bf75;
+}
+
+.reveal blockquote > p:before { content: "»" }
+.reveal blockquote > p:after  { content: "«" }
+
+.reveal figcaption { display: none; }
+
+table {
+    color: #f5f4f1;
+}
+
+.reveal h1 {
+	    font-size: 3em;
+    }
+
+.reveal h2 {
+	    font-size: 2em;
+    }
+
+.reveal h3 {
+	    font-size: 2em;
+    }
+
+.reveal section img {
+	border: 0.5em solid #383830;
+}
+
+.bgvideo h1 {
+    font-size: 4.5em;
+    background-color: rgba(15, 16, 13, 0.8);
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.speaker-controls-notes {
+    font-size: 0.5em;
+}
+
+.speaker-controls-notes .value li {
+    font-size: 11px;
+}
+
+/* POSITIONS AND LAYOUT */
+
+/* TODO: Does not work perfectly. Try just with floats
+
+.twocleft {
+  left:-8.33%;
+  text-align: left;
+  float: left;
+  width:49%;
+  z-index:-10;
+}
+
+.twocright {
+  left:31.25%;
+  top: 75px;
+  float: right;
+  text-align: right;
+  z-index:-10;
+  width:49%;
+}
+
+.reveal .twocright video {
+  min-width: 95%;
+  max-width: 95%;
+}
+
+/* DIFFERENT SLIDE THEMES */
+
+/* blue theme */
+
+.bluetheme .reveal h1, .bluetheme .reveal h2, .bluetheme .reveal h3 {
+  color: #66d9ef;
+}
+
+.bluetheme .progress span {
+	background: #66d9ef;
+}
+
+.bluetheme .reveal blockquote {
+  background-color: #66d9ef;
+  color: #272822;
+}
+
+/* green theme */
+
+.greentheme .reveal h1, .greentheme .reveal h2, .greentheme .reveal h3 {
+  color: #a6e22e;
+}
+
+.greentheme .progress span {
+	background: #a6e22e;
+}
+
+.greentheme .reveal blockquote {
+  background-color: #a6e22e;;
+  color: #272822;
+}
+
+/* lila theme */
+
+.lilatheme .reveal h1, .lilatheme .reveal h2, .lilatheme .reveal h3, .lilatheme .reveal h4, .lilatheme .reveal h5, .lilatheme .reveal h6, .lilatheme .reveal p, .lilatheme .reveal li {
+  color: #ae81ff;
+}
+
+.lilatheme .progress span {
+	background: #ae81ff;
+}
+
+.lilatheme .reveal blockquote {
+  background-color: #ae81ff;;
+  color: #272822;
+}
+
+/* red theme */
+
+.redtheme .reveal h1, .redtheme .reveal h2, .redtheme .reveal h3, .redtheme .reveal h4, .redtheme .reveal h5, .redtheme .reveal h6, .redtheme .reveal p, .redtheme .reveal li {
+  color: #f92672;
+}
+
+.redtheme .progress span {
+	background: #f92672;
+}
+
+.redtheme .reveal blockquote {
+  background-color: #f92672;;
+  color: #272822;
+}
+
+/* orange theme */
+
+.orangetheme .reveal h1, .orangetheme .reveal h2, .orangetheme .reveal h3, .orangetheme .reveal h4, .orangetheme .reveal h5, .orangetheme .reveal h6, .orangetheme .reveal p, .orangetheme .reveal li {
+  color: #fd971f;
+}
+
+.orangetheme .progress span {
+	background: #fd971f;
+}
+
+.orangetheme .reveal blockquote {
+  background-color: #fd971f;;
+  color: #272822;
+}
