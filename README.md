@@ -21,4 +21,3 @@ Personal presentations, articles, posts and so forth which are open for discussi
   Technologies at the University of Ljubljana (CJVT)_ 
 
 <!-- Wissensspeicherpräsentation -->
-- [The Landscape of Digital Technologies and Its Meaning](http://nowalkowski.de/slides/testprojekt/) ([Source](presentations/testprojekt/index.html)) - _afsd, sdfa, 
