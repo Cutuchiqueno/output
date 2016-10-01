@@ -21,4 +21,4 @@ Personal presentations, articles, posts and so forth which are open for discussi
   Technologies at the University of Ljubljana (CJVT)_ 
 
 <!-- Wissensspeicherpräsentation -->
-- [The Landscape of Digital Technologies and Its Meaning](http://nowalkowski.de/slides/ltdh2016/) ([Source](presentations/ltdh2016/index.html)) - _ Language Technologies and Digital Humanities, 29.09. - 01.10.2016, Ljubljana _
+- [The Landscape of Digital Technologies and Its Meaning](http://nowalkowski.de/slides/testprojekt/) ([Source](presentations/testprojekt/index.html)) - _afsd, sdfa, 
