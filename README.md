@@ -19,5 +19,5 @@ Personal presentations, articles, posts and so forth which are open for discussi
   Digital Humanities 2016, 29. - 01. of October, Slovenian Language
   Technologies Society (SDJT), the Centre for Language Resources and
   Technologies at the University of Ljubljana (CJVT)_ 
-- [Noch](http://nowalkowski.de/slides/testprojekt/)
-  ([Source](presentations/testprojekt/index.html)) - ein, mal, oder
+
+<!-- Wissensspeicherpräsentation -->
