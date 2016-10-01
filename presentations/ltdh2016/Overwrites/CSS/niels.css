@@ -96,6 +96,8 @@ table {
 
 /* POSITIONS AND LAYOUT */
 
+/* TODO: Does not work perfectly. Try just with floats
+
 .twocleft {
   left:-8.33%;
   text-align: left;

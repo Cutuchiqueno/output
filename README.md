@@ -21,3 +21,5 @@ Personal presentations, articles, posts and so forth which are open for discussi
   Technologies at the University of Ljubljana (CJVT)_ 
 
 <!-- Wissensspeicherpräsentation -->
+- [The Landscape of Digital Annotations and Its Meaning](http://nowalkowski.de/slides/testprojekt/) ([Source](presentations/testprojekt/index.html)) - _Language Technologies and Digital Humanities 2016, 29.09. - 30.10.2016, 
+- [The Landscape of Digital Annotations and Its Meaning](http://nowalkowski.de/slides/ltdh2016/) ([Source](presentations/ltdh2016/index.html)) - _Language Technologies and Digital Humanities 2016, 29.10. - 01.10.2016, 
