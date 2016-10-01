@@ -9,3 +9,5 @@ Personal presentations, articles, posts and so forth which are open for discussi
 <!-- Wissensspeicher Präasentation -->
 - [The Landscape of Digital Annotations and its  Meaning](http://nowalkowski.de/slides/ltdh2016/) ([Source](presentations/LTDH2016/index.html) - _Language Technologies and Digital Humanities 2016, 29. - 01. of October, Slovenian Language Technologies Society (SDJT), the Centre for Language Resources and Technologies at the University of Ljubljana (CJVT)_ 
 [Nie](http://nowalkowski.de/slides/testprojekt/) ([Source](presentations/testprojekt/index.html)) - wieder, so, ein
+[Und](http://nowalkowski.de/slides/testprojekt/) ([Source](presentations/testprojekt/index.html)) - noch, ein, mal
+[Noch](http://nowalkowski.de/slides/testprojekt/) ([Source](presentations/testprojekt/index.html)) - ein, mal, oder
