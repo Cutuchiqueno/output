@@ -18,10 +18,8 @@ Personal presentations, articles, posts and so forth which are open for discussi
   ([Source](presentations/LTDH2016/index.html)) - _Language Technologies and
   Digital Humanities 2016, 29. - 01. of October, Slovenian Language
   Technologies Society (SDJT), the Centre for Language Resources and
-  Technologies at the University of Ljubljana (CJVT)_ 
+  Technologies at the University of Ljubljana (CJVT)_
+- ['Perspektiven der Benutzeraktionsanalyse im Kontext der Evaluation von Forschungspraktiken in den Digital Humanities']  (http://nowalkowski.de/slides/dhd-2017/) ([Source](presentations/dhd-2017/index.html)) - _DHd 2017, 15.02.2017, 
 
 <!-- Wissensspeicherpräsentation -->
-- ['Perspektiven der Benutzeraktionsanalyse im Kontext der Evaluation von Forschungspraktiken in den Digital Humanities'](http://nowalkowski.de/slides/dhd-2017/) ([Source](presentations/dhd-2017/index.html)) - _DHd 2017, 15.02.2017, 
-- [Perspektiven der Benutzeraktionsanalyse im Kontext der Evaluation von Forschungspraktiken in den Digital Humanities](http://nowalkowski.de/slides/dhd-2017/) ([Source](presentations/dhd-2017/index.html)) - _DHd 2017, 15.02.2017, 
-- [Perspektiven der Benutzeraktionsanalyse im Kontext der Evaluation von Forschungspraktiken in den Digital Humanities](http://nowalkowski.de/slides/dhd-2017/) ([Source](presentations/dhd-2017/index.html)) - _DHd 2017, 15.02.2017, 
-- [Perspektiven der Benutzeraktionsanalyse im Kontext der Evaluation von Forschungspraktiken in den Digital Humanities](http://nowalkowski.de/slides/dhd-2017/) ([Source](presentations/dhd-2017/index.html)) - _DHd 2017, 15.02.2017, 
+
