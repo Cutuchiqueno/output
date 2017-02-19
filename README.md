@@ -21,3 +21,4 @@ Personal presentations, articles, posts and so forth which are open for discussi
   Technologies at the University of Ljubljana (CJVT)_ 
 
 <!-- Wissensspeicherpräsentation -->
+- ['Perspektiven der Benutzeraktionsanalyse im Kontext der Evaluation von Forschungspraktiken in den Digital Humanities'](http://nowalkowski.de/slides/dhd-2017/) ([Source](presentations/dhd-2017/index.html)) - _DHd 2017, 15.02.2017, 

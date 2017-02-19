@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="reveal.js/css/theme/black.css">
+    <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+    <script>
+      var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="stylesheet" href="Overwrites/CSS/niels.css">
+    <link rel="stylesheet" href="Includes/FontAwesome/font-awesome.min.css" title="" type="">
+  </head>
+
+  <body>
+
+
+
+    <!-- SLIDES -->
+    <div class="reveal">
+      <div class="slides">
+
+	<section>
+
+	<section>
+	  <h1>Benutzeraktionsanalyse und </br>die Dokumentation von Forschungsprozessen in den DH</h1>
+	  <p class="event">DHd 2017 - 15.02.2016</p>
+	  <p class="signature">Niels-Oliver Walkowski</br>
+	    Berlin-Brandenburgische Akademie der Wissenschaften</br>
+	  @cutuchiqueno</p>
+	</section>
+
+	<section>
+	  <h2>Ziel und Hintergrund</h2>
+	  <ul>
+	    <li><i>Frage</i>: Wie lassen sich Ergebnisse der Benutzeraktionsanalyse methodisch und technisch in den Kontext der Evaluation von DH Methoden übertragen?</li>
+	    <li><i>Kontext</i>: DARIAH-DE, Wissensspeicher
+	  </ul>
+	    <img style="height: 80px; background-color: white;" src="Includes/Media/logo_dariah.png" alt="DARIAH Logo" />
+	    <img src="Includes/Media/bbaw_logo.png" alt="BBAW Logo" />
+	  <aside class="notes">
+	  <p>
+	    Ziel meines Vortrags heute ist es deutlich zu machen inwiefern technische und konzeptuelle Ansätze der sogenannten Benutzeraktionsanalyse für die Evaluation von Forschungsaktivitäten in den DH hilfreich sein könnten. <br />
+	    Die vorgestellten Arbeiten sind Bestandteil der 3. DARIAH-DE Phase und hier konkret des Clusters "Annotieren, Analysieren, Visualisieren"<br />
+	    Gleichzeitig finden die Arbeiten an Hand eines konkreten Use-Cases statt, der durch den sogenannten Wissensspeicher der Berlin-Brandenburgischen Akademie der Wissenschaften gestellt wird.
+	  </p>
+	  </aside>
+	</section>
+
+	<section>
+	  <h2>Aufbau des Vortrags</h2>
+	  <ul>
+	    <li>Dokumentation von DH Forschungsprozessen</li>
+	    <li>Benutzeraktionsanalyse</li>
+	    <li>Use-Case: Wissensspeicher</li>
+	    <li>Zusammenhang und Ausblick</li>
+	  </ul>
+	  <aside class="notes">
+	    <p>
+	      ein kurzer Überblick über den Ablauf <br />
+	      ich beginne mit einer Einführung in 2 Modelle mit denen in den letzten Jahren versucht wird in den DH Forschungsprozesse abzubilden <br />
+	      es folgt eine Darstellung der Benutzeraktionsanalyse sowie eine Übersicht wie wir sie für die Dokumentation von Forschungsaktivität auf den Wissenspeicher angewendet habe.
+	      Am Ende versuche ich dann noch kurz das gezeigte in den Kontext der zuvor genannten Modelle zu bringen.
+	    </p>
+	  </aside>
+	</section>
+
+	</section>
+
+	<section>
+
+	  <section>
+	    <!-- GOAL historische und soziale Herkunft -->
+	    <h1>Beobachtung von Forschungsprozessen in den DH</h1>
+	    <img style="float: left; max-width: 37%;" src="Includes/Media/dimpo.png" alt="DiMPO" />
+	    <img style="float: right; max-width: 40%"  src="Includes/Media/sdm.png" alt="SDM" />
+	    <aside class="notes">
+	    <p>
+	      Die 2 Initiativen von denen ich eben gesprochen habe sind zum einen die Nedimah Method Ontology, kurz NeMO und zum anderen das Scholarly Domain Model oder auch SDM <br />
+	      Beide kommen aus dem Kontext von Infrastrukturprojekten - im Falle von NeMO ist das unter anderem DARIAH und NeDIMAH, bzw. EUROPEANA bei SDM - und versuchen durch die Bereitstellung formaler Semantiken Forschungsaktivitäten systematisch und in machineslesbarer Art und Weise zu beschreiben.
+	    </p>
+	    </aside>
+	  </section>
+
+	  <!-- GOAL wie funktioniert sie -->
+	  <section>
+	    <h2> NeMO</h2>
+	    <!-- INFO für selektive farbliche Hervorhebungen -->
+	    <!-- INFO nicht alles muss in die CSS Klasse, was nicht in die CSS Klasse passt, kann ich als Snippet generieren, also z.B Slide Layout mit eingesetzten Klassen -->
+	      <img style="width: 45%; margin-top: 0; float: left;" src="Includes/Media/nemo.png" alt="DiMPO" />
+	      <!-- <div class="fragment highlight" style="width: 30%; height: 8.5%; top: 37%; left: 7%; background: rgb(174, 129, 255); opacity: 0.3"></div> -->
+	      <!-- <div class="fragment highlight" style="width: 37%; height: 35%; top: 46%; left: 7%; background: rgb(249, 38, 114); opacity: 0.3"></div> -->
+	      <!-- <div class="fragment highlight" style="width: 50%; height: 26%; top: 52%; left: 52%; background: rgb(253, 151, 31); opacity: 0.3"></div> -->
+	      <div style="float: right; width: 45%; text-align: right;">
+		<p>3 semantische Ebenen</p>
+		<p style="font-size: 0.8em; font-style: italic;">
+		  "In brief NeMO offers: common definitions and an agreed
+		  vocabulary on research methods and related processes within the
+		  digital humanities"</p>
+		<p style="font-size: 0.8em; font-style: italic;">
+		  "a semantically organized, useful information resource on
+		  humanities research methods, related research activities,
+		  digital tools and services, data and resource types, contexts
+		  and situations for which they are appropriate, and examples
+		  of best practic"</p></div>
+	      <aside class="notes">
+		<p>
+		  kommen wir kurz zu NeMO - wobei hier wirklich kurz nur Kernaspekte genannt werden sollen <br />
+		  NeMo spezifiziert nach eigenen Aussagen 3 semantische Ebenen: <br />
+		  (1) die erste Ebene sind die abstrakten Grundentitäten die hier auf dem Slide dargestellt sind<br />
+		  (3) die Beschreibung von konkreten Akteuren, Aktivitäten und Objekten und ihrem Zusammen vor dem Hintergrund stattgefundener Forschungsprozesse ist die letzte Ebene <br />
+		  So haben z.B. in der Vergangenheit Mitarbeiter der Digital Curation Unit in Athen Interviews mit Forschern über ihren Forschungsprozess geführt und daraus Beschreibungen mittels NeMO generiert. 
+		  Diese Aufgabe wird zur Zeit durch das Digital Methods and Practices Observatory - einer DARIAH Working Group — weitereführt. <br />
+		  (2) Der mittlere Ebene entspricht eine Spezifizierung der abstrakten Entitäten vor dem Hintergrund einer bestimmten Art von Forschungsaktivität damit die zu dieser Art gehörenden Forschungssituationen angemessener beschrieben werden können <br />
+		  So hat DiMPO z.B. für die DARIAH WG Digital Annotation die Konkretisierung  'AnnotationActivity' für 'Activity' und 'Annotation' von 'InformationRessource' vorgenommen.
+		</p>
+	      </aside>
+	  </section>
+
+	  <section data-state="layout-full-img" data-background="#f8f8f2">
+	    <h2>Scholarly Domain Model</h2>
+	    <img src="Includes/Media/sdm_model.svg" alt="" />
+	    <aside class="notes">
+	    <p>
+	      einer ähnlichen Dreiteilung folgt im Prinzip auch SDM <br />
+	      es gibt jedoch einen essenziellen Unterschied, der hier in der Trennung zwischen den beiden Ebenen 'Primitives' und 'Activities' sowie der Ebne 'Operations' angedeutet wird <br />
+	      Anders als NeMO sieht SDM eine Konkretisierung seiner Semantik VOR dem zu beschreibenden Forschungsprozess und durch die Forscher selbst vor <br />
+	      Kontrastierend zu Primitives und Activities ist das Modelierungsziel von Operations daher strategisch und in der Perspektive von Forschern formuliert <br />
+	      Die so erzeugte Semantik und ihre Anwendung — das wird durch die Pfeilstruktur angedeutet — bilden dann den Ausgangspunkt einer Überarbeitung von Activities und Primitives durch die Kuratoren von SDM<br />
+	      Das heißt das Modell von SDM denkt die Dynamik seiner eigenen Semantik mit.
+	    </p>
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h2>im Auge des Betrachters …</h2>
+	    <p>Forschungsprozess</p>
+	    <p class="fragment" data-fragment-index="1" style="float: left; margin-right: 38%;"><b>SDM</b><br/><i>strategisch</i><br /><i>workflow</i></p>
+	    <p class="fragment" data-fragment-index="3" style="float: left; font-size: 4em;"><b>?</b></p>
+	    <p class="fragment" data-fragment-index="2" style="float: right;"><b>DiMPO/NeMO</b><br/><i>perzeptiv</i><br /><i>lineage</i></p>
+	    <aside class="notes">
+	    <p>
+	      wenn wir die beiden Modelle also einander gegenüber stellen, dann haben wir auf der einen Seite eine vorausschauende Anwendung — bzw. Konkretisierung einer Modellsemantik und im anderen Fall eine nachgestellte <br />
+
+	      Was jedoch bisher fehlt ist eine Beschreibung, die in der Perspektive des Forschungsprozesses selbst erfolgt und dessen Beschreibungssemantik sich aus den Gegebenheiten der Situation ableiten anstatt von einem übergeordneten Modell <br />
+	      Es geht also um eine Art Provenance Perspektive jedoch nicht für Forschungsergebnisse, sondern für den Forschungsprozess als Gegenstand.
+	    </p>
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h2>Benutzeraktionsanalyse</h2>
+	    <ul>
+	      <li>untersucht die Interaktion zwischen einer (digitalen) Umgebung und menschlichen Akteuren in dieser Umgebung</li>
+	      <li>entwickelt Verfahren für die Generierung von Daten über Benutzeraktionen sowie für ihre Auswertung</li>
+	      <li>usability, workload analysis, e-commerce, social-network-analysis</li>
+	    </ul>
+	    <aside class="notes">
+	      <p>
+		genau solch eine Perspektive bietet die sogenannte Benutzeraktionsanalyse. <br />
+		Entwickelt werden hier Verfahren zur Erfassung und Auswertung von Interaktion zwischen Akteuren und digitalen Umgebungen <br />
+		bekannt ist die Benutzeraktionsanalyse vor allem aus dem Bereich des Usability Testings oder durch recommendation-systems im e-Commerce <br />
+		doch zunehmend wird sie auch für die Untersuchung von Phänomenen im sozio-kulturellen Bereich genutzt
+	      </p>
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h2>Strategien der Benutzeraktionsanalyse</h2>
+	    <div style="float: left; text-align: right; width: 47%">
+	      <h4>Datengenerierung</h4>
+	      Serverlogs<br />
+	      Mausbewegungen<br />
+	      Augenfokus<br />
+	      Mausclicks<br />
+	      Input-Elemente<br />
+	      Session<br />
+	      Systemereignisse<br />
+	      Crawling<br />
+	      Code-Ingest<br />
+	      JS + Microdata<br />
+	    </div>
+	    <div style="float: right;; text-align: left; width: 47%;">
+	      <h4>Datenauswertung</h4>
+	      Taskmodel<br />
+	      Clustering (k-means)<br />
+	      Probabilistisch (Markov Chain)<br />
+	      Mining<br />
+	      DOM Parsing<br />
+	      Think-Aloud<br />
+	      Interviews<br />
+	    </div>
+	    <aside class="notes">
+	      <p>Im wesentlichen stellen sich bei der Benutzeraktionsanalyse 2
+		Fragen: wie generiere ich aussagekräftige Benutzeraktionsdaten und
+		wie kann ich diese auswerten 
+		<br />Hier habe ich kurz eine unvollständige Liste von Strategine
+		zusammengestellt dessen Diversität ein Hinweis auf die
+		Schwierigkeit dieser Problematik ist</p>
+	    </aside>
+	  </section>
+
+	</section>
+	<section>
+
+	  <section>
+	    <h1>Use-Case Wissensspeicher</h1>
+	    <ul>
+	      <li>digitale Kerninfrastruktur der Berlin-Brandenburgischen Akademie der Wissenschaften</li>
+	      <li>organisiert und prozessiert digitale Ressourcen der Akademie</li>
+	      <li>ermöglicht Interaktion mit einem Informationsraum statt mit Objekten</li>
+	    </ul>
+	    <aside class="notes">
+	      <p>
+		Kommen wir zur konkreten Anwendung und damit auch zum Use-Case des Wissensspeichers<br />
+		der Wissensspeicher ist eine in der Entwicklung befindliche Architektur der BBAW, die die extrem
+		heterogenen digitalen Ressourcen an der Akademie organisiert und
+		prozessiert um eine Interaktion nicht nur auf Objektebene sondern
+		graduell auch auf Inhaltsebene zu ermöglichen. Eine Leitidee war
+		es, dass es perspektivisch möglich sein soll in einem
+		Informationsraum Antworten auf Fragen zu finden, statt auf
+		Ressourcen zu stoßen, die Antworten enthalten könnten.<br />
+	        These ist es daher, dass sich mit dem vorgeschlagenen Ansatz Prozesse der Auseinandersetzung mit Wissen nachvollziehen lassen.
+	      </p>
+	    </aside>
+	  </section>
+
+	  <section data-background="#f9f8f5" data-state="layout-full-img">
+	    <h2>Architektur des Wissensspeichers</h2>
+	    <img src="Includes/Media/wissensspeicher.svg" alt="Architektur der Wissensspeichers" />
+	      <aside class="notes">
+	        <p>
+		  Konkret werden die verschiedenen ressourcen gecrawled, partiell geharvestet, normalisiert, angereichert und atomisiert <br />
+		  Das Ergebnis ist dann über ein mittels Python Django erzeugtes Webfrontend zugänglich
+	        </p>
+	      </aside>
+	  </section>
+
+	  <section>
+	    <h2>Kombination von Ansätzen zur Erhebung der Daten</h2>
+	    <ul>
+	      <li>HTTP-requests</li>
+	      <li>Browser und UI-Events</li>
+	      <li>Feedback</li>
+	    </ul>
+	    <aside class="notes">
+	      <p>
+		Der Use-Case realisiert Benutzeraktionsanalyse durch eine Kombination von Ansätzen, die kontextarmen, kontextreichen sowie qualitativen Benutzerdaten erzeugen<br />
+		Konkret ist das das loggen von http-requests, informativ angereicherten Events in der Browserumgebung sowie von aktiv gegebenen Nutzerfeedback
+	      </p>
+	    </aside>
+	  </section>
+
+	  <section data-background-color="#f9f8f5" data-state="layout-full-img">
+	    <h2>Implementierung: Architektur</h2>
+	    <img src="Includes/Media/c6usecase_architektur.svg"/>
+	    <aside class="notes">
+	      <p>
+		Die Architektur dahinter funktioniert so, dass eine REST Schnittstelle bereitgestellt durch die python-eve Bibliothek die Ereignisdaten der verschiedenen Komponenten entgegen nimmt und standardisiert in einer MongoDB speichert <br />
+		Für das tracken von Interaktionen im Browser und ihrer Anreicherung mit Kontextdaten habe ich eine JavaScript Bibliothek geschrieben dessen Name als entschieden Positionierung im ewigen Kampf der Science-Fiction Welten zu verstehen ist und dessen Funktionsweise wir uns kurz anschauen
+	      </p>
+	    </aside>
+	  </section>
+
+	  <section>
+	    <h2>Implementierung: trekkie</h2>
+	      <img class="fragment" style="margin-left:20%;" src="Includes/Media/track-wf-1.png" />
+	      <img class="fragment" src="Includes/Media/track-wf-2.png" />
+	      <img class="fragment" src="Includes/Media/track-wf-3.png" />
+	      <!-- <img class="fragment" src="Includes/Media/track-wf-4.png" /> -->
+	      <!-- TODO Bild von Daten bekommen -->
+	      <!-- <img class="fragmetn" src="Includes/Media/track-wf-5.png" /> -->
+	      <aside class="notes">
+		<p>
+		  Was wir hier sehen ist ein Django template zur dynamischen Erstellung der Webpräsenz des Wissenspeichers. Ich nutze ein HTML data- Attribut um Bereiche auf der Website in typisierter Form zu markieren die Träger zu trackender Interaktionen sind, also z.B. data-event-owner = ui-results-item-info oder 'ui-results-item-person' usw. <br />
+		  Außerdem wird mit der Seite ein JavaScript Snipper ausgeliefert, der dafür sorgt, nachdem die Seite geladen ist alle Elemente, die ein solches 'data-' Attribut tragen mit sogenannten 'EventListenern' versehen werden, die den Aufruf von Funktionen sichern sofern eine Aktion auf diesem Element stattfindet <br />
+		  Diese Funktionen parsen den Kontext einer Aktion erzeugen daraus ein Datenobjekt und senden dieses an die REST Schnittstelle. Jeder Interaktionstyp besitzt seinen spezifischen Kontextparser
+		</p>
+	      </aside>
+	  </section>
+
+	  <section>
+	    <h2>Eventtypen</h2>
+	    <table style="font-size: 0.5em;">
+	    <tr>
+	      <td>EVENT GROUP</td>
+	      <td>PAGE</td>
+	      <td>AREA</td>
+	      <td>EVENT</td>
+	      <td>TRIGGERTYPE</td>
+	      <td>PROPERTIES</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>landing page</td>
+	      <td></td>
+	      <td>query (field)</td>
+	      <td>click</td>
+	      <td>query string; query paramter</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>search bar</td>
+	      <td>query (field)</td>
+	      <td>click</td>
+	      <td>query string; query paramter</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>result item</td>
+	      <td>click on result title</td>
+	      <td>click</td>
+	      <td>'Weitere Informationen' open; not open; time spent on the
+		page before click</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>result item</td>
+	      <td>click on 'Weitere Informationen'</td>
+	      <td>click</td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>result item</td>
+	      <td>click on project name</td>
+	      <td>click</td>
+	      <td>result item where the link is clicked; 'Weitere
+		Informationen' open; not open; others open</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>'Weitere Informationen'</td>
+	      <td>click on person name</td>
+	      <td>click</td>
+	      <td>time on the page; other 'Weitere Informationen' open</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>'Weitere Informationen'</td>
+	      <td>click on place name</td>
+	      <td>click</td>
+	      <td>time on the page; other 'Weitere Informationen' open</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>'Weitere Informationen'</td>
+	      <td>click on subject name</td>
+	      <td>click</td>
+	      <td>time on the page; other 'Weitere Informationen' open</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>'Erkunden'</td>
+	      <td>click on tag</td>
+	      <td></td>
+	      <td>place; person; language; subject; tab new/old</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>filter area</td>
+	      <td>click on 'AutorInnen' item</td>
+	      <td>click</td>
+	      <td>value; pie count status</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>filter area</td>
+	      <td>click on 'Projekte/Vorhabe' item</td>
+	      <td>click</td>
+	      <td>value; pie count status</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>filter area</td>
+	      <td>click on 'Sprachen' item</td>
+	      <td>click</td>
+	      <td>value; pie count status</td>
+	    </tr>
+	    <tr>
+	      <td>ui</td>
+	      <td>result list page</td>
+	      <td>filter area</td>
+	      <td>click on 'Filter anwenden' button</td>
+	      <td>click</td>
+	      <td>value; pie count status</td>
+	    </tr>
+	    <tr>
+	      <td>browser</td>
+	      <td></td>
+	      <td></td>
+	      <td>open link in new tab</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td>browser</td>
+	      <td>all</td>
+	      <td></td>
+	      <td>page is loaded</td>
+	      <td></td>
+	      <td>external or internal referer url</td>
+	    </tr>
+	    <tr>
+	      <td>browser</td>
+	      <td></td>
+	      <td></td>
+	      <td>back button</td>
+	      <td></td>
+	      <td>page loaded; page in history</td>
+	    </tr>
+	    <tr>
+	      <td>browser</td>
+	      <td></td>
+	      <td></td>
+	      <td>loose focus</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td>browser</td>
+	      <td></td>
+	      <td></td>
+	      <td>gain focus</td>
+	      <td></td>
+	      <td></td>
+	    </tr>
+	    <tr>
+	      <td>implicit</td>
+	      <td></td>
+	      <td></td>
+	      <td>time spent on a page</td>
+	      <td></td>
+	      <td>active; inactive; activity rythm</td>
+	    </tr>
+	    <tr>
+	      <td>implicit</td>
+	      <td></td>
+	      <td></td>
+	      <td>back from primary source page</td>
+	      <td></td>
+	      <td>time spent there; *</td>
+	    </tr>
+	  </table>
+	  <aside class="notes">
+	    <p>
+	      Diese Folie soll lediglich einen kleinen Eindruck von der Reichhaltigkeit von Aktionen vermitteln die der eben erwähnten Typisierungslogik zugrunde liegt.<br />
+	      Die Eventgruppe bezieht sich auf das technische Bezugssystem, da die Lister hier etwas abgeschnitten ist, sehen wir nicht wirklich alle. <br />
+	      Am Beispiel vom User Interface erfolgt eine Spezifizierung template, Bereich des Templates, Aktionstyp sowie die dazugehörige Triggeraktion und schließlich kontextuelle Eigenschaften die die Aktion weiter spezifizieren.
+	    </p>
+	  </aside>
+	  </section>
+
+	  <section>
+	    <h2>Kombination von Ansätzen der Bedeutungsgebung und Auswertung</h2>
+	    <ul>
+	      <li>task-model</li>
+	      <li>think-aloud</li>
+	      <li>clustering</li>
+	    </ul>
+	    <aside class="notes">
+	      <p>
+		für die Auswertung der erzeugten Daten werden wir auf eine Kombination der hier dargestellten Verfahren zurückgreifen.<br />
+		im task-model beschreiben die Entwickler eines Benutzerinterfaces oder einer Software Funktionen als Schrittfolge im Hinblick auf der Software zu Grunde liegende Ziele.<br />
+		think-aloud kommt aus dem usability testing und beschreibt eine Methode bei ein Benutzer mit einer digitalen Umgebung interagiert und gleichzeitig verbalisiert was seine Intention bei jedem Schritt ist.<br />
+		beim cluster handelt es sich um den algorithmischen Versuch — in der User Activity Analysis wird zumeist K-Means verwendet — Gruppen ähnlicher Aktionsfolgen zu identifizieren
+		entscheidend ist, das bei all diesen Verfahren Bedeutung nicht aus einem der Forschungsumgebung äußerlichen Referenzmodel abgeleitet wird, sondern aus der Softwarearchitektur, dem Benutzer sowie der Struktur der erzeugten Daten
+	      </p>
+	    </aside>
+	  </section>
+
+	</section>
+
+	<section>
+
+	  <section data-background="#f9f8f5" data-state="layout-full-img">
+	    <h1>Benutzeraktionsanalyse im Kontext</h1>
+	    <img src="Includes/Media/metamodel.svg" />
+	    <aside class="notes">
+	      <ul>
+		<p>
+		  die Frage ist am Ende, wie lässt sich das dargestellte Verfahren in den Kontext der eingangs geschilderten Aktivitäten bringen? <br />
+		  Costis Dallas, einer der wesentlichen Köpfe hinter NeMO spricht gerne davon, dass Modellierungsprozesse von Modellen mit normativer Intention und Funktion als ein Prozess des Verhandelns zwischen Partikularem und Allgemeinem mittels gleichberechtigter beteiligter Akteure verstanden werden sollten und nicht des Vereinheitlichen<br />
+		  Er spricht prägte dafür die zwei Phrasen 'meeting in the contact zone' gegenüber 'curating on the wild front'
+		  Sowohl SDM als auch NeMO versuchen dieser Problematik gerecht zu werden in dem sie eine Konkretisierung der Terme ihrer Semantik zulassen. Als Konkretisierung verweilt eine solche konkretisierende Beschreibung aber natürlich immer noch in der Logik der Ausgangssemantik. Dies kann von Fall zu Fall durchaus problematisch sein.<br />
+		  Konkret hatten wir z.B in der DARIAH WG Digital Annotation eine solche Erfahrung bei der die zur Zeit omnipräsente Anwendung des Begriffs Annotieren bei gleichzeitiger Unterspezifiziertheit seines methodischen Gehalts eine Evaluation von digitalen Annotationspraktiken extrem schwierig gestaltet hat.<br />
+		  Das heißt um wirklich einen Verhandlungsprozess zu ermöglichen — und das heißt letztendlich nichts anderes als interessante und kreative Einblicke zu ermöglichen — ist notwendig unterschiedliche Beschreibungslogiken mit einander in Dialog treten zu lassen.
+		  Das heißt konkret Modellogik — hier hellgrau — und Situationslogig — hier dunkelgrau — in ein produktives Verhältnis zu setzen anstatt nur eine dieser Logiken in eine Situation hinein zu vermitteln.
+		</p>
+	      </ul>
+	      <!-- Unterschied UAA zu NeMO/SDM: Ausgangspunkt nicht ein bereists methodisch verstandenes Ereignis, sondern ein Platformereignis. Ziel nicht: was findet unter dem Term statt oder wie muß er konkretisiert werden sondern wie kann ich aus der Situation methodische Ereignisse und Beschreibungen gewinnen vevor eine Vermitllung mit methodischen Perspektiven statt gefunden hat. Idee is tine Radikaliserung des Perspektivenswitches von SDM. -->
+	    </aside>
+	  </section>
+	    
+	</section>
+
+	<section data-state="bluetheme">
+	  <section>
+	    <h1>Danke</h1>
+	    <p>presented with reveal.js</p>
+	    <p>source at Cutuchiqueno/output.git</p>
+	    <p>Twitter: @Cutuchiqueno</p>
+	  </section>
+	</section>
+
+	<section>
+		<section>
+			<!-- OVERKILL: kein Plädoyer für einen generellen Einstz, Sinn abhängig von der Tragfähigkeit angewendeter Konzepte, sowie von der Transparenz der analysierten Forschungssituation. Beides in innovativen weil digitalen Kontexten weniger der Fall. Bsp. Annotation -->
+			<!-- WSP NICHT FORSCHUNGPRAXIS: im Prinzip richtig. Ziel des Use Cases das Konzept zu prüfen und in den Kontext bestehender Aktivitäten zu stellen. Dabei sind Gegenstand und Ergebnisse sekundär. WSP Low Hanging Fruit. Sowohl auf Tools übertragbar als auch auf rein algorithmisch gestaltete Forschungsprozesse wie aktuelle Ansätze automatischer containeriziserung von Forschungsprozessen zeigt -->
+		</section>
+	</section>
+      </div>
+    </div>
+
+    <script src="reveal.js/lib/js/head.min.js"></script>
+
+    <script src="reveal.js/js/reveal.js"></script>
+    <script>
+      Reveal.initialize({
+	history: true,
+	controls: false,
+	transition: 'slide',
+	// showNotes: "separate-page",
+
+	dependencies: [
+	  { src: 'reveal.js/plugin/markdown/marked.js' },
+	  { src: 'reveal.js/plugin/markdown/markdown.js' },
+	  { src: 'reveal.js/plugin/notes/notes.js', async: true },
+	  { src: 'reveal.js/plugin/printRevealNotes/PrintRevealNotes.js'},
+	  { src: 'reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+	]
+      });
+
+      Reveal.configure({
+	pdfMaxPagesPerSlide: 1,
+      });
+    </script>
+  </body>
+</html>
